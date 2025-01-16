@@ -8,8 +8,7 @@ workflows:
         instance_type: mac_mini_m2
         environment:
           android_signing:
-            - keystore_reference: amit
-            - alias: my-key-alias
+            - keystore_reference
           vars:
             PACKAGE_NAME: "io.codemagic.sample.reactnative" # <-- Put your package name here e.g. com.domain.myapp
           node: v19.7.0
