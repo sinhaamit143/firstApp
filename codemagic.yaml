@@ -9,7 +9,7 @@ workflows:
         environment:
           android_signing:
             - keystore_reference: amit
-              alias: my-key-alias
+            - alias: my-key-alias
           vars:
             PACKAGE_NAME: "io.codemagic.sample.reactnative" # <-- Put your package name here e.g. com.domain.myapp
           node: v19.7.0
