@@ -22,10 +22,10 @@ workflows:
             - name: Make gradlew executable
               script: |
                 chmod +x android/gradlew
-            - name: Build Android release
+            - name: Build Android release (AAB and APK)
               script: |
                 cd android
-                ./gradlew bundleRelease 
+                ./gradlew bundleRelease assembleRelease 
         artifacts:
             - android/app/build/outputs/**/*.aab
             - android/app/build/outputs/apk/release/*.apk
